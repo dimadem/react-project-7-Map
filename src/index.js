@@ -14,7 +14,7 @@ function App() {
       container: "map",
       style: "mapbox://styles/mapbox/dark-v10",
       center: [37.6173, 55.7558],
-      zoom: 12
+      zoom: 12,
     });
 
     //Starting point for Marker
@@ -27,14 +27,14 @@ function App() {
 
   function handleChangeOption(event) {
     const point = event.target.value;
-    marker.setLngLat(stores.[point]);
-    console.log(point)
+    marker.setLngLat(stores[point]);
+    console.log(point);
   }
 
   const stores = {
     km20: [37.610641, 55.761994],
     belief: [37.601152, 55.733396],
-    brandshop: [37.616812, 55.767839]
+    brandshop: [37.616812, 55.767839],
   };
 
   //console
